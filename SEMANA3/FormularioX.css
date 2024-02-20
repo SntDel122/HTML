@@ -1,0 +1,65 @@
+html{
+    font-size: 16px;
+    font-family: sans-serif; /*tipo de fuente*/
+}
+body{
+    background-color: lightseagreen; /*color de fondo*/
+}
+/* aplicar estilos a la clase= "contenedor" */
+.contenedor{
+    max-width: 400px;
+    height: auto;
+    background-color: coral;
+    margin: 5% auto;/* centrar contenedor en doc web */
+    padding-bottom: 16px;
+}
+header{
+    width: 100%;
+    text-align: center; /*centrar texto*/
+    padding: 10px 0 5px;
+    border-top: solid 8px rgb(2, 2, 2);
+    margin-bottom: 5px;
+}
+header h2{
+    font-weight: bold; /*negrilla*/
+    color: black;
+    font-size: 18px; /*tamaño de fuente*/
+}
+.form_register{
+    padding: 0 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;/* alinear horizontal*/
+    align-content: center; /*alinear vertical*/
+    background-color: lemonchiffon;
+}
+.btn_accion{
+    display: flex;
+    justify-content: space-around;/*alinear horizontal mas cercanos*/
+    margin-top: 16px;
+}
+.input, .btn_enviar, .btn_limpiar{
+    background-color: rgb(149, 71, 223);
+    padding: 8px;
+    margin: 8px;
+    outline: none;/*quitar bordes de color negro*/
+    transition: all .5s;/*efecto de animacion en delay*/
+}
+.btn_enviar, .btn_limpiar{
+    width: 40%;
+    border-radius: 25px;/*bordes redondeados*/
+    background-color: rgb(42, 30, 210);
+    color: rgb(255, 255, 255);
+    margin-left: 25px;
+}
+/*seudo clase o evento de un css focus al dar click en el control del fomulario*/
+input:focus{ 
+    background-color: lightgreen;
+    border-color: darkgoldenrod;
+}
+#Terminos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
